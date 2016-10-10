@@ -1,3 +1,27 @@
+<style>
+	.paddinZero {
+		padding: 0 !important;
+	}
+	
+	#titleListaCliente {
+		text-align: center;
+		background-color: #337ab7;
+	    border-color: #2e6da4;
+	    border-radius: 10px;
+	    color: whitesmoke;
+	    margin-bottom: 20px;
+	}
+	
+	#coluna h4 {
+		font-weight: 700;
+	}
+	
+	#lista * {
+		font-weight: inherit;
+	}
+	
+</style>
+
 <div class="container">
 	<!-- Novo cliente. -->
 	<form class="form-horizontal">
@@ -25,12 +49,30 @@
 			<!-- Button -->
 			<div class="form-group">
 				<label class="col-md-4 control-label"></label>
-				<div class="col-md-4">
-					<button type="button" class="btn btn-primary"
+				<div class="col-xs-6">
+					<button type="button" class="btn btn-primary col-xs-12"
 						ng-click="novoCliente(cliente)">Novo</button>
 				</div>
 			</div>
-
+			<br>
+			<br>
+			<br>
+			<br>
+			<!-- Tabela que exbe todos os dados cadastrados -->
+			<div class="container-fluid col-xs-12 paddinZero">
+				<!-- Tabela que exbe todos os dados cadastrados -->
+				<div id="coluna" class="col-xs-12 paddinZero">
+					<h3 id="titleListaCliente" class="col-xs-12">Lista de Clientes </h3>
+					<h4 class="col-xs-6">Código</h4>
+					<h4 class="col-xs-6">Nome</h4>
+				</div>
+				
+				<div id="linha" class="col-xs-12 paddinZero">
+					<div id="lista" class="col-xs-12 paddinZero">
+						
+					</div>
+				</div>
+			</div>
 		</fieldset>
 	</form>
 </div>

@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html ng-app="vendas">
 <head>
-<meta charset="utf-8">
+<meta name="description" content="Como usar charset na <meta> tag">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vendas</title>
+<title>Vendas Lab</title>
 <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <script src="lib/angularjs/js/angular.min.js"></script>
 <script src="lib/angularjs/js/angular-route.min.js"></script>
@@ -12,11 +14,29 @@
 <script type="text/javascript" src="produtoCtrl.js"></script>
 <script type="text/javascript" src="clienteCtrl.js"></script>
 <script type="text/javascript" src="routeConfig.js"></script>
+<style>
+	#contentMenu a {
+		padding: 0;	
+		color: whitesmoke;	
+		font-size: 20px;
+	}
+	
+	#contentMenu {
+		text-align: center;
+	    background-color: #337ab7;
+	    border-color: #2e6da4;
+	    border-radius: 10px;
+	    color: whitesmoke;
+	    margin-bottom: 20px;
+	}
+</style>
 </head>
 <body>
-	<a href="#/produto">Produto</a>
-	<br>
-	<a href="#/cliente">Cliente</a>
+	<div id="contentMenu" class="container">
+		<a href="#/produto" class="col-xs-12">Produto</a>
+		<br>
+		<a href="#/cliente" class="col-xs-12">Cliente</a>
+	</div>	
 	<div ng-view></div>
 	<script src="lib/jquery/js/jquery.min.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
