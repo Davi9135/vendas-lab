@@ -30,4 +30,10 @@ public class ProdutoController {
   public Produto novo(@RequestBody Produto produto) {
     return produtoService.registrarProduto(produto);
   }
+  
+  @RequestMapping(value = "/deletar", method= POST)
+  public void deletar(@RequestBody Integer codigo ) {
+	  produtoService.delete(codigo);
+  }
+  
 }

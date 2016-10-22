@@ -20,4 +20,9 @@ public class ClienteService {
   public Iterable<Cliente> obterTodos() {
     return clienteRepository.findAll();
   }
+  
+  public void delete(Integer codigo) {
+	  clienteRepository.delete(codigo);
+  }
+  
 }

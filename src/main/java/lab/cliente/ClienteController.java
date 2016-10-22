@@ -30,4 +30,10 @@ public class ClienteController {
   public Cliente novo(@RequestBody Cliente cliente) {
     return clienteService.registrarCliente(cliente);
   }
+  
+  @RequestMapping(value = "/deletar", method = POST)
+  public void deletar(@RequestBody Integer codigo) {
+	  clienteService.delete(codigo);
+  } 
+  
 }

@@ -13,16 +13,19 @@
 	}
 	
 	#coluna h4 {
-		font-weight: 700; 
+		font-weight: 700;
 	}
-	
 	
 	#lista * {
 		font-weight: inherit;
 	}
 	
+	#coluna {
+	    margin-bottom: 10px;
+    }
+	
 </style>
-<div class="container" onload="listarTodosProduto()">
+<div class="container">
 	<!-- Novo produto. -->
 	<form class="form-horizontal">
 		<fieldset>
@@ -82,10 +85,11 @@
 				<!-- Tabela que exbe todos os dados cadastrados -->
 				<div id="coluna" class="col-xs-12 paddinZero">
 					<h3 id="titleListaProdruto" class="col-xs-12">Lista de Produtos </h3>
-					<h4 class="col-xs-3">C�digo</h4>
+					<h4 class="col-xs-2">C�digo</h4>
 					<h4 class="col-xs-3">Nome</h4>
 					<h4 class="col-xs-3">Tipo</h4>
-					<h4 class="col-xs-3">Quantidade</h4>
+					<h4 class="col-xs-2">Quantidade</h4>
+					<h4 class="col-xs-2">A��o</h4>
 				</div>
 				
 				<div id="linha" class="col-xs-12 paddinZero">
